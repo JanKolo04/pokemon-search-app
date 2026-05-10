@@ -1,0 +1,252 @@
+[
+  {
+    "id": 252,
+    "name": {
+      "english": "Treecko",
+      "japanese": "キモリ",
+      "chinese": "木守宫",
+      "french": "Arcko"
+    },
+    "type": ["Grass"],
+    "base": {
+      "HP": 40,
+      "Attack": 45,
+      "Defense": 35,
+      "Sp. Attack": 65,
+      "Sp. Defense": 55,
+      "Speed": 70
+    },
+    "species": "Wood Gecko Pokémon",
+    "description": "Treecko has small hooks on the bottom of its feet that enable it to scale vertical walls.",
+    "image": {
+      "sprite": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/252.png",
+      "thumbnail": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/252.png",
+      "hires": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/252.png"
+    }
+  },
+  {
+    "id": 255,
+    "name": {
+      "english": "Torchic",
+      "japanese": "アチャモ",
+      "chinese": "火稚鸡",
+      "french": "Poussifeu"
+    },
+    "type": ["Fire"],
+    "base": {
+      "HP": 45,
+      "Attack": 60,
+      "Defense": 40,
+      "Sp. Attack": 70,
+      "Sp. Defense": 50,
+      "Speed": 45
+    },
+    "species": "Chick Pokémon",
+    "description": "Torchic has a place inside its body where it keeps its flame.",
+    "image": {
+      "sprite": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/255.png",
+      "thumbnail": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/255.png",
+      "hires": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/255.png"
+    }
+  },
+  {
+    "id": 258,
+    "name": {
+      "english": "Mudkip",
+      "japanese": "ミズゴロウ",
+      "chinese": "水跃鱼",
+      "french": "Gobou"
+    },
+    "type": ["Water"],
+    "base": {
+      "HP": 50,
+      "Attack": 70,
+      "Defense": 50,
+      "Sp. Attack": 50,
+      "Sp. Defense": 50,
+      "Speed": 40
+    },
+    "species": "Mud Fish Pokémon",
+    "description": "The fin on Mudkip's head acts as highly sensitive radar.",
+    "image": {
+      "sprite": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/258.png",
+      "thumbnail": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/258.png",
+      "hires": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/258.png"
+    }
+  },
+  {
+    "id": 172,
+    "name": {
+      "english": "Pichu",
+      "japanese": "ピチュー",
+      "chinese": "皮丘",
+      "french": "Pichu"
+    },
+    "type": ["Electric"],
+    "base": {
+      "HP": 20,
+      "Attack": 40,
+      "Defense": 15,
+      "Sp. Attack": 35,
+      "Sp. Defense": 35,
+      "Speed": 60
+    },
+    "species": "Tiny Mouse Pokémon",
+    "description": "Despite its small size, it can zap even adult humans.",
+    "image": {
+      "sprite": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/172.png",
+      "thumbnail": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/172.png",
+      "hires": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/172.png"
+    }
+  },
+  {
+    "id": 280,
+    "name": {
+      "english": "Ralts",
+      "japanese": "ラルトス",
+      "chinese": "拉鲁拉丝",
+      "french": "Tarsal"
+    },
+    "type": ["Psychic", "Fairy"],
+    "base": {
+      "HP": 28,
+      "Attack": 25,
+      "Defense": 25,
+      "Sp. Attack": 45,
+      "Sp. Defense": 35,
+      "Speed": 40
+    },
+    "species": "Feeling Pokémon",
+    "description": "Ralts senses the emotions of people using the horns on its head.",
+    "image": {
+      "sprite": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/280.png",
+      "thumbnail": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/280.png",
+      "hires": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/280.png"
+    }
+  },
+  {
+    "id": 302,
+    "name": {
+      "english": "Sableye",
+      "japanese": "ヤミラミ",
+      "chinese": "勾魂眼",
+      "french": "Ténéfix"
+    },
+    "type": ["Dark", "Ghost"],
+    "base": {
+      "HP": 50,
+      "Attack": 75,
+      "Defense": 75,
+      "Sp. Attack": 65,
+      "Sp. Defense": 65,
+      "Speed": 50
+    },
+    "species": "Darkness Pokémon",
+    "description": "Sableye lives in the darkness of caves. Its eyes are jewels that sparkle.",
+    "image": {
+      "sprite": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/302.png",
+      "thumbnail": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/302.png",
+      "hires": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/302.png"
+    }
+  },
+  {
+    "id": 328,
+    "name": {
+      "english": "Trapinch",
+      "japanese": "ナックラー",
+      "chinese": "大颚蚁",
+      "french": "Kraknoix"
+    },
+    "type": ["Ground"],
+    "base": {
+      "HP": 45,
+      "Attack": 100,
+      "Defense": 45,
+      "Sp. Attack": 45,
+      "Sp. Defense": 45,
+      "Speed": 10
+    },
+    "species": "Ant Pit Pokémon",
+    "description": "Trapinch makes a conical pit in desert sand and lies in wait for prey.",
+    "image": {
+      "sprite": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/328.png",
+      "thumbnail": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/328.png",
+      "hires": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/328.png"
+    }
+  },
+  {
+    "id": 361,
+    "name": {
+      "english": "Snorunt",
+      "japanese": "ユキワラシ",
+      "chinese": "雪童子",
+      "french": "Stalgamin"
+    },
+    "type": ["Ice"],
+    "base": {
+      "HP": 50,
+      "Attack": 50,
+      "Defense": 50,
+      "Sp. Attack": 50,
+      "Sp. Defense": 50,
+      "Speed": 50
+    },
+    "species": "Snow Hat Pokémon",
+    "description": "Snorunt lives in regions where snow falls heavily, eating snow and ice to survive.",
+    "image": {
+      "sprite": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/361.png",
+      "thumbnail": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/361.png",
+      "hires": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/361.png"
+    }
+  },
+  {
+    "id": 371,
+    "name": {
+      "english": "Bagon",
+      "japanese": "タツベイ",
+      "chinese": "宝贝龙",
+      "french": "Draby"
+    },
+    "type": ["Dragon"],
+    "base": {
+      "HP": 45,
+      "Attack": 75,
+      "Defense": 60,
+      "Sp. Attack": 40,
+      "Sp. Defense": 30,
+      "Speed": 50
+    },
+    "species": "Rock Head Pokémon",
+    "description": "Bagon dreams of one day soaring in the sky, despite being unable to fly.",
+    "image": {
+      "sprite": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/371.png",
+      "thumbnail": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/371.png",
+      "hires": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/371.png"
+    }
+  },
+  {
+    "id": 447,
+    "name": {
+      "english": "Riolu",
+      "japanese": "リオル",
+      "chinese": "利欧路",
+      "french": "Riolu"
+    },
+    "type": ["Fighting"],
+    "base": {
+      "HP": 40,
+      "Attack": 70,
+      "Defense": 40,
+      "Sp. Attack": 35,
+      "Sp. Defense": 40,
+      "Speed": 60
+    },
+    "species": "Emanation Pokémon",
+    "description": "Riolu's body emits a special aura when it experiences strong emotions.",
+    "image": {
+      "sprite": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/447.png",
+      "thumbnail": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/447.png",
+      "hires": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/447.png"
+    }
+  }
+]
