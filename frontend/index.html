@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokemon Search</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="hero-title">
+    <img src="logo.png" class="logo" alt="logo">
+    <h1>
+        <span class="pokemon">Pokemon</span>
+        <span class="search">Search</span>
+    </h1>
+</div>
+
+<div class="controls">
+    <input type="text" id="search" placeholder="Wpisz fragment nazwy lub typu (np. 'pika', 'char', 'fire')...">
+    <select id="type-filter">
+        <option value="">Wszystkie typy</option>
+    </select>
+</div>
+
+<p class="example-hint">
+    Przykład: wpisz <code>char</code> aby znaleźć Charmandera, Charmeleona i Charizarda,
+    wpisz <code>fire</code> aby znaleźć wszystkie Pokémony typu ognistego,
+    albo wybierz typ z listy obok.
+</p>
+
+<div id="status" class="status"></div>
+<div id="grid" class="grid"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

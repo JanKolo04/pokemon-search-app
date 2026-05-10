@@ -1,14 +1,22 @@
 [project]
-name = "pytemp"
-description = "A simple Python package template"
-dynamic = ["version"]
-requires-python = ">=3.14"
+name = "pokemon-search-app"
+version = "0.1.0"
+description = "Pokemon search application"
+requires-python = ">=3.13"
 readme = "README.md"
-license = { file = "LICENSE.md"}
+license = "MIT"
+license-files = ["LICENSE.md"]
 
 [project.urls]
 "Homepage" = "https://github.com/wnowicki/pytemp"
 "Source" = "https://github.com/wnowicki/pytemp"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["app"]
 
 [tool.pytest.ini_options]
 minversion = "6.0"
