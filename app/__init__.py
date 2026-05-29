@@ -1,4 +1,5 @@
 import json
+from collections import deque
 from pathlib import Path
 
 from flask import Flask, abort, jsonify, request
@@ -24,6 +25,52 @@ def create_app() -> Flask:
     for p in pokedex:
         types.update(p["type"])
     sorted_types = sorted(types)
+
+    id_to_index: dict[int, int] = {p["id"]: i for i, p in enumerate(pokedex)}
+
+    adjacency: list[set[int]] = [set() for _ in pokedex]
+    for i, p in enumerate(pokedex):
+        evolution = p.get("evolution") or {}
+        related: list[str] = [nxt[0] for nxt in evolution.get("next", [])]
+        if evolution.get("prev"):
+            related.append(evolution["prev"][0])
+        for raw_id in related:
+            try:
+                j = id_to_index[int(raw_id)]
+            except (KeyError, ValueError):
+                continue
+            if j != i:
+                adjacency[i].add(j)
+                adjacency[j].add(i)
+
+    def find_start_nodes(query: str, type_filter: str) -> list[int]:
+        seeds: list[int] = []
+        for i, p in enumerate(pokedex):
+            if query and query not in p["name"]["english"].lower():
+                continue
+            if type_filter and type_filter not in p["type"]:
+                continue
+            seeds.append(i)
+        return seeds
+
+    def bfs_search(query: str, type_filter: str) -> list[dict]:
+        visited = [False] * len(pokedex)
+        queue: deque[int] = deque()
+        for start in find_start_nodes(query, type_filter):
+            if not visited[start]:
+                visited[start] = True
+                queue.append(start)
+
+        order: list[int] = []
+        while queue:
+            i = queue.popleft()
+            order.append(i)
+            for j in sorted(adjacency[i]):
+                if not visited[j]:
+                    visited[j] = True
+                    queue.append(j)
+
+        return [pokedex[i] for i in order]
 
     def to_card(entry: dict) -> dict:
         img = entry["image"]
@@ -51,15 +98,7 @@ def create_app() -> Flask:
         query = request.args.get("q", "").strip().lower()
         type_filter = request.args.get("type", "").strip()
 
-        results = pokedex
-        if query:
-            results = [
-                p for p in results
-                if query in p["name"]["english"].lower()
-                or any(query in t.lower() for t in p["type"])
-            ]
-        if type_filter:
-            results = [p for p in results if type_filter in p["type"]]
+        results = bfs_search(query, type_filter)
 
         return jsonify([to_card(p) for p in results])
 
