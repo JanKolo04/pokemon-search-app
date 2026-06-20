@@ -161,3 +161,71 @@ body {
 .type-dark { background: #705848; }
 .type-steel { background: #b8b8d0; color: #333; }
 .type-fairy { background: #ee99ac; }
+.card {
+    cursor: pointer;
+}
+
+.battle-analysis {
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.battle-box {
+    background: #1c1c1c;
+    border: 1px solid #ffcb05;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: left;
+}
+
+.battle-box h2,
+.battle-box h3 {
+    text-align: center;
+    color: #ffcb05;
+}
+
+.attacker-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.attacker-box img {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+}
+
+.opponents-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.opponent-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background: #111;
+    border: 1px solid #333;
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.opponent-card img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.opponent-info {
+    flex: 1;
+}
+
+.win-rate {
+    color: #c8ff3d;
+    font-weight: bold;
+}
