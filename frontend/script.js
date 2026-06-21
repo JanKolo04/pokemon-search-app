@@ -3,6 +3,27 @@ const typeSelect = document.getElementById("type-filter");
 const grid = document.getElementById("grid");
 const status = document.getElementById("status");
 const battleAnalysis = document.getElementById("battle-analysis");
+const modalOverlay = document.getElementById("modal-overlay");
+const modalClose = document.getElementById("modal-close");
+
+modalClose.addEventListener("click", () => {
+    modalOverlay.classList.add("hidden");
+    battleAnalysis.innerHTML = "";
+});
+
+modalOverlay.addEventListener("click", (e) => {
+    if (e.target === modalOverlay) {
+        modalOverlay.classList.add("hidden");
+        battleAnalysis.innerHTML = "";
+    }
+});
+
+document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") {
+        modalOverlay.classList.add("hidden");
+        battleAnalysis.innerHTML = "";
+    }
+});
 
 let debounceId = null;
 
@@ -50,6 +71,7 @@ function renderCards(items) {
 
 async function loadBattleAnalysis(name) {
     battleAnalysis.innerHTML = "<p>Ładowanie analizy walk...</p>";
+    modalOverlay.classList.remove("hidden");
 
     try {
         const response = await fetch(
@@ -158,9 +180,6 @@ function renderBattleAnalysis(data) {
         </div>
     `;
 
-    battleAnalysis.scrollIntoView({
-        behavior: "smooth"
-    });
 }
 
 function loadPokemons() {
