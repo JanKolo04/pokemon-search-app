@@ -17,12 +17,29 @@
       "Speed": 70
     },
     "species": "Wood Gecko Pokémon",
-    "description": "Treecko has small hooks on the bottom of its feet that enable it to scale vertical walls.",
+    "description": "Treecko is cool, calm, and collected—it never panics under any situation. If a bigger foe were to glare at this Pokémon, it would glare right back without conceding an inch of ground.",
+    "evolution": {
+      "next": [["253", "Level 16"]]
+    },
+    "profile": {
+      "height": "0.5 m",
+      "weight": "5 kg",
+      "egg": ["Monster", "Dragon"],
+      "ability": [["Overgrow", "false"], ["Unburden", "true"]],
+      "gender": "87.5:12.5"
+    },
     "image": {
       "sprite": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/252.png",
       "thumbnail": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/252.png",
       "hires": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/252.png"
-    }
+    },
+    "moves": [
+      {"name": "Focus Punch", "type": "Fighting", "power": 150, "damage_class": "physical"},
+      {"name": "Leaf Storm", "type": "Grass", "power": 130, "damage_class": "special"},
+      {"name": "Mega Kick", "type": "Normal", "power": 120, "damage_class": "physical"},
+      {"name": "Iron Tail", "type": "Steel", "power": 100, "damage_class": "physical"},
+      {"name": "Dig", "type": "Ground", "power": 80, "damage_class": "physical"}
+    ]
   },
   {
     "id": 255,
@@ -42,12 +59,29 @@
       "Speed": 45
     },
     "species": "Chick Pokémon",
-    "description": "Torchic has a place inside its body where it keeps its flame.",
+    "description": "Torchic has a place inside its body where it keeps its flame. Give it a hug—it will be glowing with warmth. This Pokémon is covered all over by a fluffy coat of down.",
+    "evolution": {
+      "next": [["256", "Level 16"]]
+    },
+    "profile": {
+      "height": "0.4 m",
+      "weight": "2.5 kg",
+      "egg": ["Field"],
+      "ability": [["Blaze", "false"], ["Speed Boost", "true"]],
+      "gender": "87.5:12.5"
+    },
     "image": {
       "sprite": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/255.png",
       "thumbnail": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/255.png",
       "hires": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/255.png"
-    }
+    },
+    "moves": [
+      {"name": "Last Resort", "type": "Normal", "power": 140, "damage_class": "physical"},
+      {"name": "Overheat", "type": "Fire", "power": 130, "damage_class": "special"},
+      {"name": "Bounce", "type": "Flying", "power": 85, "damage_class": "physical"},
+      {"name": "Dig", "type": "Ground", "power": 80, "damage_class": "physical"},
+      {"name": "Rock Slide", "type": "Rock", "power": 75, "damage_class": "physical"}
+    ]
   },
   {
     "id": 258,
@@ -67,12 +101,29 @@
       "Speed": 40
     },
     "species": "Mud Fish Pokémon",
-    "description": "The fin on Mudkip's head acts as highly sensitive radar.",
+    "description": "In water, Mudkip breathes using the gills on its cheeks. If it is faced with a tight situation in battle, this Pokémon will unleash its amazing power—it can crush rocks bigger than itself.",
+    "evolution": {
+      "next": [["259", "Level 16"]]
+    },
+    "profile": {
+      "height": "0.4 m",
+      "weight": "7.6 kg",
+      "egg": ["Monster", "Water 1"],
+      "ability": [["Torrent", "false"], ["Damp", "true"]],
+      "gender": "87.5:12.5"
+    },
     "image": {
       "sprite": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/258.png",
       "thumbnail": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/258.png",
       "hires": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/258.png"
-    }
+    },
+    "moves": [
+      {"name": "Double Edge", "type": "Normal", "power": 120, "damage_class": "physical"},
+      {"name": "Superpower", "type": "Fighting", "power": 120, "damage_class": "physical"},
+      {"name": "Hydro Pump", "type": "Water", "power": 110, "damage_class": "special"},
+      {"name": "Blizzard", "type": "Ice", "power": 110, "damage_class": "special"},
+      {"name": "Iron Tail", "type": "Steel", "power": 100, "damage_class": "physical"}
+    ]
   },
   {
     "id": 172,
@@ -92,12 +143,29 @@
       "Speed": 60
     },
     "species": "Tiny Mouse Pokémon",
-    "description": "Despite its small size, it can zap even adult humans.",
+    "description": "It has electric sacs in its cheeks. When they're fully charged, Pichu plays very energetically.",
+    "evolution": {
+      "next": [["25", "high Friendship"]]
+    },
+    "profile": {
+      "height": "0.3 m",
+      "weight": "2 kg",
+      "egg": ["Undiscovered"],
+      "ability": [["Static", "false"], ["Lightning Rod", "true"]],
+      "gender": "50:50"
+    },
     "image": {
       "sprite": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/172.png",
       "thumbnail": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/172.png",
       "hires": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/172.png"
-    }
+    },
+    "moves": [
+      {"name": "Mega Kick", "type": "Normal", "power": 120, "damage_class": "physical"},
+      {"name": "Zap Cannon", "type": "Electric", "power": 120, "damage_class": "special"},
+      {"name": "Iron Tail", "type": "Steel", "power": 100, "damage_class": "physical"},
+      {"name": "Surf", "type": "Water", "power": 90, "damage_class": "special"},
+      {"name": "Play Rough", "type": "Fairy", "power": 90, "damage_class": "physical"}
+    ]
   },
   {
     "id": 280,
@@ -117,12 +185,29 @@
       "Speed": 40
     },
     "species": "Feeling Pokémon",
-    "description": "Ralts senses the emotions of people using the horns on its head.",
+    "description": "Ralts has the ability to sense the emotions of people. If its Trainer is in a cheerful mood, this Pokémon grows cheerful and joyous in the same way.",
+    "evolution": {
+      "next": [["281", "Level 20"]]
+    },
+    "profile": {
+      "height": "0.4 m",
+      "weight": "6.6 kg",
+      "egg": ["Amorphous"],
+      "ability": [["Synchronize", "false"], ["Trace", "false"], ["Telepathy", "true"]],
+      "gender": "50:50"
+    },
     "image": {
       "sprite": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/280.png",
       "thumbnail": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/280.png",
       "hires": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/280.png"
-    }
+    },
+    "moves": [
+      {"name": "Mega Kick", "type": "Normal", "power": 120, "damage_class": "physical"},
+      {"name": "Future Sight", "type": "Psychic", "power": 120, "damage_class": "special"},
+      {"name": "Thunderbolt", "type": "Electric", "power": 90, "damage_class": "special"},
+      {"name": "Shadow Ball", "type": "Ghost", "power": 80, "damage_class": "special"},
+      {"name": "Dazzling Gleam", "type": "Fairy", "power": 80, "damage_class": "special"}
+    ]
   },
   {
     "id": 302,
@@ -142,12 +227,27 @@
       "Speed": 50
     },
     "species": "Darkness Pokémon",
-    "description": "Sableye lives in the darkness of caves. Its eyes are jewels that sparkle.",
+    "description": "Materials from gems it has eaten float to the surface of its body and can form an infinite number of patterns among individuals.",
+    "evolution": {},
+    "profile": {
+      "height": "0.5 m",
+      "weight": "11 kg",
+      "egg": ["Human-Like"],
+      "ability": [["Keen Eye", "false"], ["Stall", "false"], ["Prankster", "true"]],
+      "gender": "50:50"
+    },
     "image": {
       "sprite": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/302.png",
       "thumbnail": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/302.png",
       "hires": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/302.png"
-    }
+    },
+    "moves": [
+      {"name": "Hyper Beam", "type": "Normal", "power": 150, "damage_class": "special"},
+      {"name": "Focus Punch", "type": "Fighting", "power": 150, "damage_class": "physical"},
+      {"name": "Poltergeist", "type": "Ghost", "power": 110, "damage_class": "physical"},
+      {"name": "Dream Eater", "type": "Psychic", "power": 100, "damage_class": "special"},
+      {"name": "Foul Play", "type": "Dark", "power": 95, "damage_class": "physical"}
+    ]
   },
   {
     "id": 328,
@@ -167,12 +267,29 @@
       "Speed": 10
     },
     "species": "Ant Pit Pokémon",
-    "description": "Trapinch makes a conical pit in desert sand and lies in wait for prey.",
+    "description": "It builds nests that double as traps, lying in wait for its prey to get caught. When night falls, it digs itself a spot beneath the sand to sleep.",
+    "evolution": {
+      "next": [["329", "Level 35"]]
+    },
+    "profile": {
+      "height": "0.7 m",
+      "weight": "15 kg",
+      "egg": ["Bug"],
+      "ability": [["Hyper Cutter", "false"], ["Arena Trap", "false"], ["Sheer Force", "true"]],
+      "gender": "50:50"
+    },
     "image": {
       "sprite": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/328.png",
       "thumbnail": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/328.png",
       "hires": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/328.png"
-    }
+    },
+    "moves": [
+      {"name": "Hyper Beam", "type": "Normal", "power": 150, "damage_class": "special"},
+      {"name": "Solar Beam", "type": "Grass", "power": 120, "damage_class": "special"},
+      {"name": "Superpower", "type": "Fighting", "power": 120, "damage_class": "physical"},
+      {"name": "Earthquake", "type": "Ground", "power": 100, "damage_class": "physical"},
+      {"name": "Stone Edge", "type": "Rock", "power": 100, "damage_class": "physical"}
+    ]
   },
   {
     "id": 361,
@@ -192,12 +309,29 @@
       "Speed": 50
     },
     "species": "Snow Hat Pokémon",
-    "description": "Snorunt lives in regions where snow falls heavily, eating snow and ice to survive.",
+    "description": "Rich people from cold areas all share childhood memories of playing with Snorunt.",
+    "evolution": {
+      "next": [["362", "Level 42"], ["478", "use Dawn Stone, Female"]]
+    },
+    "profile": {
+      "height": "0.7 m",
+      "weight": "16.8 kg",
+      "egg": ["Fairy", "Mineral"],
+      "ability": [["Inner Focus", "false"], ["Ice Body", "false"], ["Moody", "true"]],
+      "gender": "50:50"
+    },
     "image": {
       "sprite": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/361.png",
       "thumbnail": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/361.png",
       "hires": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/361.png"
-    }
+    },
+    "moves": [
+      {"name": "Double Edge", "type": "Normal", "power": 120, "damage_class": "physical"},
+      {"name": "Blizzard", "type": "Ice", "power": 110, "damage_class": "special"},
+      {"name": "Crunch", "type": "Dark", "power": 80, "damage_class": "physical"},
+      {"name": "Shadow Ball", "type": "Ghost", "power": 80, "damage_class": "special"},
+      {"name": "Water Pulse", "type": "Water", "power": 60, "damage_class": "special"}
+    ]
   },
   {
     "id": 371,
@@ -217,12 +351,29 @@
       "Speed": 50
     },
     "species": "Rock Head Pokémon",
-    "description": "Bagon dreams of one day soaring in the sky, despite being unable to fly.",
+    "description": "Some theories suggest that its behavior of forcefully bashing its head into things stimulates cells that affect its evolution.",
+    "evolution": {
+      "next": [["372", "Level 30"]]
+    },
+    "profile": {
+      "height": "0.6 m",
+      "weight": "42.1 kg",
+      "egg": ["Dragon"],
+      "ability": [["Rock Head", "false"], ["Sheer Force", "true"]],
+      "gender": "50:50"
+    },
     "image": {
       "sprite": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/371.png",
       "thumbnail": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/371.png",
       "hires": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/371.png"
-    }
+    },
+    "moves": [
+      {"name": "Draco Meteor", "type": "Dragon", "power": 130, "damage_class": "special"},
+      {"name": "Thrash", "type": "Normal", "power": 120, "damage_class": "physical"},
+      {"name": "Fire Blast", "type": "Fire", "power": 110, "damage_class": "special"},
+      {"name": "Hydro Pump", "type": "Water", "power": 110, "damage_class": "special"},
+      {"name": "Crunch", "type": "Dark", "power": 80, "damage_class": "physical"}
+    ]
   },
   {
     "id": 447,
@@ -242,11 +393,28 @@
       "Speed": 60
     },
     "species": "Emanation Pokémon",
-    "description": "Riolu's body emits a special aura when it experiences strong emotions.",
+    "description": "It uses waves called auras to communicate with others of its kind. It doesn't make any noise during this time, so its enemies can't detect it.",
+    "evolution": {
+      "next": [["448", "high Friendship, Daytime"]]
+    },
+    "profile": {
+      "height": "0.7 m",
+      "weight": "20.2 kg",
+      "egg": ["Undiscovered"],
+      "ability": [["Steadfast", "false"], ["Inner Focus", "false"], ["Prankster", "true"]],
+      "gender": "87.5:12.5"
+    },
     "image": {
       "sprite": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/sprites/447.png",
       "thumbnail": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/thumbnails/447.png",
       "hires": "https://raw.githubusercontent.com/Purukitto/pokemon-data.json/master/images/pokedex/hires/447.png"
-    }
+    },
+    "moves": [
+      {"name": "Focus Punch", "type": "Fighting", "power": 150, "damage_class": "physical"},
+      {"name": "Mega Kick", "type": "Normal", "power": 120, "damage_class": "physical"},
+      {"name": "Earthquake", "type": "Ground", "power": 100, "damage_class": "physical"},
+      {"name": "Iron Tail", "type": "Steel", "power": 100, "damage_class": "physical"},
+      {"name": "Blaze Kick", "type": "Fire", "power": 85, "damage_class": "physical"}
+    ]
   }
 ]
