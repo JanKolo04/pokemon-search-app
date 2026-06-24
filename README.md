@@ -1,21 +1,59 @@
-# Python Template
+# Pokemon Search App
 
-[![python](https://img.shields.io/badge/Python-3.14-3776AB.svg?style=flat&logo=python&logoColor=white)](https://www.python.org)
-[![ruff](https://github.com/wnowicki/pytemp/workflows/Ruff/badge.svg)](https://github.com/wnowicki/pytemp/actions?query=branch%3Amain)
-[![pytest](https://github.com/wnowicki/pytemp/workflows/Pytest/badge.svg)](https://github.com/wnowicki/pytemp/actions?query=branch%3Amain)
-[![pylint](https://github.com/wnowicki/pytemp/workflows/Pylint/badge.svg)](https://github.com/wnowicki/pytemp/actions?query=branch%3Amain)
-[![markdown](https://github.com/wnowicki/pytemp/workflows/Markdown%20Lint/badge.svg)](https://github.com/wnowicki/pytemp/actions?query=branch%3Amain)
-[![License: GPLv3](https://img.shields.io/badge/License-MIT-blue.svg)](https://license.md/licenses/mit-license/)
+Aplikacja webowa w Pythonie (Flask) do wyszukiwania Pokémonów z modułem analizy walk opartym na algorytmach AI.
 
-## Test
+## Wymagania
 
-```shell
+- Python 3.13+
+- [`uv`](https://docs.astral.sh/uv/)
+
+## Uruchomienie
+
+```bash
+uv sync
+uv run python run.py
+```
+
+Aplikacja działa na `http://127.0.0.1:5001`.
+
+## Testy
+
+```bash
 uv run pytest
 ```
 
-## Security
+## Jakość kodu
 
-If you discover any security-related issues, please email [email](mailto:email) instead of using the issue tracker.
+```bash
+uvx ruff check .
+```
 
----
-Copyright (c) [year] [fullname]
+## Struktura projektu
+
+```text
+pokemon-search-app/
+├── run.py                   # Punkt startowy
+├── app/
+│   ├── __init__.py          # Logika: BFS, heurystyka walki, endpointy REST
+│   └── main.py              # Punkt wejścia pakietu
+├── files/
+│   ├── pokedex.json         # Baza 898 Pokémonów z ruchami (PokéAPI)
+│   └── pokedex_example.json # Przykładowy zestaw 10 Pokémonów
+├── frontend/                # Istniejący UI wyszukiwarki (HTML/CSS/JS)
+├── scripts/
+│   └── enrich_moves.py      # Jednorazowy skrypt pobierający ruchy z PokéAPI
+├── tests/
+│   ├── conftest.py
+│   └── test_example.py      # 32 testy jednostkowe i integracyjne
+├── pyproject.toml
+└── uv.lock
+```
+
+## Algorytmy AI
+
+- **BFS** na grafie ewolucji — wyszukiwanie rozszerza wyniki o cały łańcuch ewolucji
+- **Heurystyczna funkcja oceny** — symulacja DPS z macierzą 18 typów i rzeczywistymi danymi ruchów z PokéAPI
+
+## Licencja
+
+Zobacz [LICENSE.md](LICENSE.md).

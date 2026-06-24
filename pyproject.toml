@@ -1,14 +1,25 @@
 [project]
-name = "pytemp"
-description = "A simple Python package template"
-dynamic = ["version"]
-requires-python = ">=3.14"
+name = "pokemon-search-app"
+version = "0.1.0"
+description = "Pokemon search application"
+requires-python = ">=3.13"
 readme = "README.md"
-license = { file = "LICENSE.md"}
+license = "MIT"
+license-files = ["LICENSE.md"]
+dependencies = [
+    "Flask>=3.0.0",
+]
 
 [project.urls]
 "Homepage" = "https://github.com/wnowicki/pytemp"
 "Source" = "https://github.com/wnowicki/pytemp"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["app"]
 
 [tool.pytest.ini_options]
 minversion = "6.0"
@@ -24,8 +35,8 @@ my_app = "app.main:main"
 [tool.coverage.run]
 
 omit = [
-    "*/__init__.py",
     "alembic/*",
+    "scripts/*",
 ]
 
 [tool.ruff]
@@ -63,6 +74,7 @@ unfixable = ["B"]
 [tool.ruff.lint.per-file-ignores]
 "__init__.py" = ["E402", "F403"]
 "**/{tests,docs,tools}/*" = ["E402", "S101"]
+"scripts/*" = ["S310"]
 
 [dependency-groups]
 dev = [
